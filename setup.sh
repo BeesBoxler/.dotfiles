@@ -4,6 +4,9 @@ DOTFILES_DIR="$HOME/.dotfiles"
 
 mkdir -p ~/.config/kitty
 ln -sf "$DOTFILES_DIR/kitty/kitty.conf" ~/.config/kitty/kitty.conf
+THEME=https://raw.githubusercontent.com/dexpota/kitty-themes/master/themes/Monokai_Pro.conf
+wget "$THEME" -P ~/.config/kitty/kitty-themes/themes
+ln -sf ~/.config/kitty/kitty-themes/themes/Monokai_Pro.conf ~/.config/kitty/theme.conf
 
 ln -sf "$DOTFILES_DIR/nvim" ~/.config/nvim
 ln -sf "$DOTFILES_DIR/.tmux.conf" ~/.tmux.conf
