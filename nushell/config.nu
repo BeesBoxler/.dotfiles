@@ -23,6 +23,8 @@ alias gsw = git switch
 alias gpn = git push origin (git branch --show-current) --no-verify
 alias g = git
 alias cat = bat
+alias brightness = ddcutil --display 1 setvcp 10
+alias v = nvim
 
 $env.config.show_banner = false
 $env.config.buffer_editor = 'nvim'
