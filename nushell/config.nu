@@ -28,3 +28,5 @@ alias v = nvim
 
 $env.config.show_banner = false
 $env.config.buffer_editor = 'nvim'
+$env.PATH = ($env.PATH | split row (char esep) | prepend ['/opt/homebrew/bin', '/Library/TeX/texbin'])
+
