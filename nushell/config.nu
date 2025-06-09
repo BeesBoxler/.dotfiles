@@ -25,8 +25,10 @@ alias g = git
 alias cat = bat
 alias brightness = ddcutil --display 1 setvcp 10
 alias v = nvim
+alias t = tmux
 
 $env.config.show_banner = false
 $env.config.buffer_editor = 'nvim'
 $env.PATH = ($env.PATH | split row (char esep) | prepend ['/opt/homebrew/bin', '/Library/TeX/texbin'])
 
+source $"($nu.home-path)/.cargo/env.nu"

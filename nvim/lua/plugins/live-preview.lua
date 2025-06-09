@@ -1,6 +1,6 @@
 return {
-    'brianhuster/live-preview.nvim',
-    dependencies = {
-        'ibhagwan/fzf-lua',
-    },
+	"brianhuster/live-preview.nvim",
+	dependencies = {
+		"ibhagwan/fzf-lua",
+	},
 }
